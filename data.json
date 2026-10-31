@@ -1,0 +1,137 @@
+{
+ "cur": "Rs",
+ "sale": {
+  "on": true,
+  "text": "Launch offer: Rs 500 off your first order. Use code",
+  "code": "NEW500"
+ },
+ "hero": {
+  "title": "Wear it easy.",
+  "sub": "Hoodies, trousers and everyday accessories for men and women, made for comfort and delivered across Pakistan.",
+  "cta": "Shop now"
+ },
+ "products": [
+  {
+   "name": "Essential Oversized Hoodie",
+   "cat": "Hoodies",
+   "price": "4500",
+   "sale": "3600",
+   "color": "#3A3F4B",
+   "badge": "Best seller",
+   "img": "",
+   "desc": "Soft brushed cotton blend with a relaxed, oversized fit. Everyday comfort for men and women."
+  },
+  {
+   "name": "Zip-Up Fleece Hoodie",
+   "cat": "Hoodies",
+   "price": "5200",
+   "sale": "",
+   "color": "#6B4F3A",
+   "badge": "New",
+   "img": "",
+   "desc": "Warm fleece lining, full zip and two deep pockets. Easy to layer."
+  },
+  {
+   "name": "Relaxed Cargo Trousers",
+   "cat": "Trousers",
+   "price": "4800",
+   "sale": "3900",
+   "color": "#4A5A43",
+   "badge": "",
+   "img": "",
+   "desc": "Loose fit with roomy cargo pockets and an adjustable waist."
+  },
+  {
+   "name": "Straight Fit Chino Trousers",
+   "cat": "Trousers",
+   "price": "4200",
+   "sale": "",
+   "color": "#8A7355",
+   "badge": "",
+   "img": "",
+   "desc": "Clean straight cut in soft stretch cotton. Smart enough for work, easy enough for weekends."
+  },
+  {
+   "name": "Everyday Tote Bag",
+   "cat": "Accessories",
+   "price": "2800",
+   "sale": "",
+   "color": "#7B2D3B",
+   "badge": "",
+   "img": "",
+   "desc": "Sturdy canvas tote with an inner pocket, big enough for daily essentials."
+  },
+  {
+   "name": "Classic Cotton Cap",
+   "cat": "Accessories",
+   "price": "1500",
+   "sale": "",
+   "color": "#1F3B4D",
+   "badge": "New",
+   "img": "",
+   "desc": "Adjustable back strap and a curved brim in breathable cotton."
+  },
+  {
+   "name": "Heavy Fleece Hoodie",
+   "cat": "Winter hoodies",
+   "price": "6200",
+   "sale": "4900",
+   "color": "#2F3B52",
+   "badge": "Winter",
+   "img": "",
+   "winter": true,
+   "desc": "Thick, warm fleece made for cold Pakistani winters."
+  },
+  {
+   "name": "Quilted Puffer Jacket",
+   "cat": "Jackets",
+   "price": "9800",
+   "sale": "",
+   "color": "#4A2E2E",
+   "badge": "New",
+   "img": "",
+   "winter": true,
+   "desc": "Light but warm quilted jacket with a high collar and zip pockets."
+  },
+  {
+   "name": "Thermal Lined Trousers",
+   "cat": "Winter trousers",
+   "price": "5400",
+   "sale": "4500",
+   "color": "#3F4A3D",
+   "badge": "",
+   "img": "",
+   "winter": true,
+   "desc": "Brushed thermal lining keeps you warm without the bulk."
+  },
+  {
+   "name": "Wool Blend Muffler",
+   "cat": "Accessories",
+   "price": "2400",
+   "sale": "",
+   "color": "#8A5A3B",
+   "badge": "",
+   "img": "",
+   "winter": true,
+   "desc": "Soft wool blend muffler, long enough to wrap twice."
+  }
+ ],
+ "sections": [
+  {
+   "title": "Made for everyday",
+   "body": "Hush Hub is a new Pakistani brand making comfortable hoodies, trousers and accessories for men and women. Soft fabrics, easy fits and honest prices.",
+   "btn": "Our story",
+   "tone": "deep"
+  }
+ ],
+ "winter": {
+  "on": true,
+  "title": "Winter Collection",
+  "sub": "Stay warm in soft fleece, heavy knits and layers made for Pakistan’s cold months."
+ },
+ "wa": "",
+ "ship": {
+  "fee": "250",
+  "free": "5000"
+ }
+}
