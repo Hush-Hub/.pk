@@ -223,13 +223,18 @@ function loadGH(){var x={};try{x=JSON.parse(localStorage.getItem('hushhub-gh')||
 function saveGH(){try{localStorage.setItem('hushhub-gh',JSON.stringify(GH))}catch(e){}}
 function gs(m,err,ok){GS=m||'';var e=$('ghs');if(!e)return;e.textContent=GS;e.style.color=err?'#FF8A7A':ok?'#8FD19E':''}
 function explain(e){return e.status==401?'GitHub did not accept the token. Make a new one.':(e.status==403||e.status==404)?'Check the username, repository name, and that the token has Contents: Read and write for this repository.':(e.message||'Unknown error')}
-async function gh(path,method,body){var r=await fetch('https://api.github.com/repos/'+GH.o+'/'+GH.r+'/contents/'+path+(method=='GET'?'?ref='+encodeURIComponent(GH.b):''),{method:method,headers:{Authorization:'Bearer '+GH.t,Accept:'application/vnd.github+json'},body:body?JSON.stringify(body):undefined});var j={};try{j=await r.json()}catch(x){}if(!r.ok){var e=new Error(j.message||('Error '+r.status));e.status=r.status;throw e}return j}
+async function gh(path,method,body){var r=await fetch('https://api.github.com/repos/'+GH.o+'/'+GH.r+'/contents/'+path+(method=='GET'?'?ref='+encodeURIComponent(GH.b)+'&_='+Date.now():''),{method:method,cache:'no-store',headers:{Authorization:'Bearer '+GH.t,Accept:'application/vnd.github+json'},body:body?JSON.stringify(body):undefined});var j={};try{j=await r.json()}catch(x){}if(!r.ok){var e=new Error(j.message||('Error '+r.status));e.status=r.status;throw e}return j}
 function u64(s){return btoa(unescape(encodeURIComponent(s)))}
-async function pub(){if(!GH.t||!GH.o||!GH.r){gs('Add your GitHub details in the Publish tab first.',1);return}gs('Publishing...');
- try{var txt=JSON.stringify(S,null,1);for(var a=0;a<2;a++){var sha;try{sha=(await gh('data.json','GET')).sha}catch(e){if(e.status!=404)throw e}
-  try{await gh('data.json','PUT',{message:'Update site from admin',content:u64(txt),branch:GH.b,sha:sha});gs('Published. Your site updates in about a minute.',0,1);return}catch(e){if((e.status!=409&&e.status!=422)||a==1)throw e}}}
- catch(e){gs('Could not publish: '+explain(e),1)}}
-function ghSave(){GH.o=$('ghO').value.trim();GH.r=$('ghR').value.trim();GH.b=$('ghB').value.trim()||'main';GH.t=$('ght').value.trim();GH.auto=$('gha').checked;saveGH();gs(GH.t?'Connected. Press Publish now to test it.':'Saved. Add a token to turn on publishing.');adm()}
+var SHA='',busy=0,again=0;
+async function pub(){if(!GH.t||!GH.o||!GH.r){gs('Add your GitHub details in the Publish tab first.',1);return}
+ if(busy){again=1;return}busy=1;gs('Publishing...');
+ try{for(var a=0;a<3;a++){var txt=JSON.stringify(S,null,1),sha=SHA;
+  if(!sha){try{sha=(await gh('data.json','GET')).sha}catch(e){if(e.status!=404)throw e}}
+  try{var j=await gh('data.json','PUT',{message:'Update site from admin',content:u64(txt),branch:GH.b,sha:sha});SHA=(j.content&&j.content.sha)||'';gs('Published. Your site updates in about a minute.',0,1);break}
+  catch(e){SHA='';if((e.status!=409&&e.status!=422)||a==2)throw e}}}
+ catch(e){gs('Could not publish: '+explain(e),1)}
+ busy=0;if(again){again=0;clearTimeout(pt);pt=setTimeout(pub,800)}}
+function ghSave(){GH.o=$('ghO').value.trim();GH.r=$('ghR').value.trim();GH.b=$('ghB').value.trim()||'main';GH.t=$('ght').value.trim();GH.auto=$('gha').checked;SHA='';saveGH();gs(GH.t?'Connected. Press Publish now to test it.':'Saved. Add a token to turn on publishing.');adm()}
 function ghClear(){if(confirm('Disconnect GitHub from this browser?')){GH.t='';saveGH();gs('Disconnected.');adm()}}
 function ghIn(id,l,v){return '<label>'+l+'</label><input id="'+id+'" value="'+esc(v)+'">'}
 async function finishUp(i,out){gs('Uploading photos...');var res=[];for(var k=0;k<out.length;k++){var d=out[k];if(GH.t&&GH.o&&GH.r){try{var path='images/'+Date.now().toString(36)+k+Math.random().toString(36).slice(2,5)+'.jpg';await gh(path,'PUT',{message:'Add product photo',content:d.split(',')[1],branch:GH.b});PV[path]=d;res.push(path);continue}catch(e){gs('Photo upload to GitHub failed ('+explain(e)+'). Kept it inside the site file instead.',1)}}res.push(d)}setPics(i,pics(S.products[i]).concat(res))}
