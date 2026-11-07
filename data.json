@@ -82,39 +82,6 @@
    "img": "",
    "winter": true,
    "desc": "Thick, warm fleece made for cold Pakistani winters."
-  },
-  {
-   "name": "Quilted Puffer Jacket",
-   "cat": "Jackets",
-   "price": "9800",
-   "sale": "",
-   "color": "#4A2E2E",
-   "badge": "New",
-   "img": "",
-   "winter": true,
-   "desc": "Light but warm quilted jacket with a high collar and zip pockets."
-  },
-  {
-   "name": "Thermal Lined Trousers",
-   "cat": "Winter trousers",
-   "price": "5400",
-   "sale": "4500",
-   "color": "#3F4A3D",
-   "badge": "",
-   "img": "",
-   "winter": true,
-   "desc": "Brushed thermal lining keeps you warm without the bulk."
-  },
-  {
-   "name": "Wool Blend Muffler",
-   "cat": "Accessories",
-   "price": "2400",
-   "sale": "",
-   "color": "#8A5A3B",
-   "badge": "",
-   "img": "",
-   "winter": true,
-   "desc": "Soft wool blend muffler, long enough to wrap twice."
   }
  ],
  "sections": [
