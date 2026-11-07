@@ -125,7 +125,7 @@
   }
  ],
  "winter": {
-  "on": true,
+  "on": false,
   "title": "Winter Collection",
   "sub": "Stay warm in soft fleece, heavy knits and layers made for Pakistan’s cold months."
  },
