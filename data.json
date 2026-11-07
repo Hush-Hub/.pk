@@ -10,19 +10,7 @@
   "sub": "Discover timeless Pakistani fashion with our curated collection of elegant two-piece and three-piece suits, featuring beautiful prints, delicate embroidery and graceful designs. Everyday elegance, made affordable and delivered across Pakistan.",
   "cta": "Shop now"
  },
- "products": [
-  {
-   "name": "Blush Bloom – Printed Two-Piece Suit",
-   "cat": "Suit",
-   "price": "6000",
-   "sale": "5000",
-   "color": "#3A3F4B",
-   "badge": "Best seller",
-   "img": "",
-   "desc": "Blush Bloom – Printed Two-Piece Suit.",
-   "status": "soon"
-  }
- ],
+ "products": [],
  "sections": [
   {
    "title": "Made for everyday",
