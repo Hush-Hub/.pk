@@ -71,17 +71,6 @@
    "badge": "New",
    "img": "",
    "desc": "Adjustable back strap and a curved brim in breathable cotton."
-  },
-  {
-   "name": "Heavy Fleece Hoodie",
-   "cat": "Winter hoodies",
-   "price": "6200",
-   "sale": "4900",
-   "color": "#2F3B52",
-   "badge": "Winter",
-   "img": "",
-   "winter": true,
-   "desc": "Thick, warm fleece made for cold Pakistani winters."
   }
  ],
  "sections": [
