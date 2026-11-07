@@ -10,7 +10,17 @@
   "sub": "Discover timeless Pakistani fashion with our curated collection of elegant two-piece and three-piece suits, featuring beautiful prints, delicate embroidery and graceful designs. Everyday elegance, made affordable and delivered across Pakistan.",
   "cta": "Shop now"
  },
- "products": [],
+ "products": [
+  {
+   "name": "New product",
+   "cat": "Category",
+   "price": "0",
+   "sale": "",
+   "color": "#6A72B8",
+   "badge": "New",
+   "imgs": []
+  }
+ ],
  "sections": [
   {
    "title": "Made for everyday",
