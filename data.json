@@ -2,124 +2,111 @@
  "cur": "Rs",
  "sale": {
   "on": true,
-  "text": "WELCOME TO ",
-  "code": " H.H Couture"
+  "text": "Our first collection is live. Welcome to Hush Hub.",
+  "code": ""
  },
  "hero": {
   "title": "Wear it easy.",
-  "sub": "Traditional dresses,Hoodies, trousers and everyday accessories for men and women, made for comfort and delivered across Pakistan.",
-  "cta": "Shop now"
+  "sub": "Soft khaddar co-ord sets for women, made for comfort and delivered across Pakistan.",
+  "cta": "Shop co-ord sets"
  },
  "products": [
   {
-   "name": "Blush Bloom – Printed Two-Piece Suit",
-   "cat": "Suit",
-   "price": "",
-   "sale": "5900",
-   "color": "#3A3F4B",
+   "name": "Midnight Bloom - Black Khaddar Co-ord Set",
+   "cat": "Khaddar Co-ord Sets",
+   "cap": "Deep black khaddar with soft floral detailing",
+   "price": "7900",
+   "sale": "6900",
+   "color": "#1B1B1F",
    "badge": "Best seller",
-   "img": "",
-   "desc": "Blush Bloom – Printed Two-Piece Suit."
+   "desc": "A warm, soft khaddar shirt with matching bottoms in classic black. Easy to dress up with a shawl or keep simple for everyday. Choose your shirt with pant or trouser.",
+   "imgs": []
   },
   {
-   "name": "Zip-Up Fleece Hoodie",
-   "cat": "Hoodies",
-   "price": "5200",
+   "name": "Ivory Blossom - White Khaddar Co-ord Set",
+   "cat": "Khaddar Co-ord Sets",
+   "cap": "Soft ivory khaddar, light and elegant",
+   "price": "7900",
    "sale": "",
-   "color": "#6B4F3A",
+   "color": "#E9E2D3",
+   "badge": "",
+   "limited": true,
+   "left": "6",
+   "desc": "Fresh ivory khaddar with delicate blossom styling. Comfortable fit and a clean, polished look. Choose your shirt with pant or trouser.",
+   "imgs": []
+  },
+  {
+   "name": "Rose Dawn - Pink Khaddar Co-ord Set",
+   "cat": "Khaddar Co-ord Sets",
+   "cap": "Blush pink for gentle winter mornings",
+   "price": "8200",
+   "sale": "",
+   "color": "#D9A3A8",
    "badge": "New",
-   "img": "",
-   "desc": "Warm fleece lining, full zip and two deep pockets. Easy to layer."
+   "desc": "Blush pink khaddar co-ord set with a relaxed, flattering cut. Pairs beautifully with neutral shawls. Choose your shirt with pant or trouser.",
+   "imgs": []
   },
   {
-   "name": "Relaxed Cargo Trousers",
-   "cat": "Trousers",
-   "price": "4800",
-   "sale": "3900",
-   "color": "#4A5A43",
+   "name": "Olive Grove - Green Khaddar Co-ord Set",
+   "cat": "Khaddar Co-ord Sets",
+   "cap": "Earthy olive green with a calm, modern feel",
+   "price": "8200",
+   "sale": "7200",
+   "color": "#5E6B3F",
    "badge": "",
-   "img": "",
-   "desc": "Loose fit with roomy cargo pockets and an adjustable waist."
+   "desc": "Earthy olive khaddar in a comfortable everyday co-ord. Warm, soft and easy to style. Choose your shirt with pant or trouser.",
+   "imgs": []
   },
   {
-   "name": "Straight Fit Chino Trousers",
-   "cat": "Trousers",
-   "price": "4200",
+   "name": "Dusty Mauve - Mauve Khaddar Co-ord Set",
+   "cat": "Khaddar Co-ord Sets",
+   "cap": "A muted mauve tone that suits every occasion",
+   "price": "8500",
    "sale": "",
-   "color": "#8A7355",
+   "color": "#9C7B8F",
    "badge": "",
-   "img": "",
-   "desc": "Clean straight cut in soft stretch cotton. Smart enough for work, easy enough for weekends."
+   "desc": "Muted mauve khaddar with a graceful drape. A soft, elegant choice for gatherings and daily wear. Choose your shirt with pant or trouser.",
+   "imgs": []
   },
   {
-   "name": "Everyday Tote Bag",
-   "cat": "Accessories",
-   "price": "2800",
+   "name": "Sand Dune - Beige Khaddar Co-ord Set",
+   "cat": "Khaddar Co-ord Sets",
+   "cap": "Warm beige, simple and timeless",
+   "price": "7900",
    "sale": "",
-   "color": "#7B2D3B",
+   "color": "#C2A77D",
    "badge": "",
-   "img": "",
-   "desc": "Sturdy canvas tote with an inner pocket, big enough for daily essentials."
+   "desc": "Warm beige khaddar co-ord set that goes with everything. Cosy, neat and comfortable all day. Choose your shirt with pant or trouser.",
+   "imgs": []
   },
   {
-   "name": "Classic Cotton Cap",
-   "cat": "Accessories",
-   "price": "1500",
+   "name": "Royal Navy - Navy Khaddar Co-ord Set",
+   "cat": "Khaddar Co-ord Sets",
+   "cap": "Rich navy with a sharp, refined finish",
+   "price": "8500",
    "sale": "",
-   "color": "#1F3B4D",
-   "badge": "New",
-   "img": "",
-   "desc": "Adjustable back strap and a curved brim in breathable cotton."
-  },
-  {
-   "name": "Heavy Fleece Hoodie",
-   "cat": "Winter hoodies",
-   "price": "6200",
-   "sale": "4900",
-   "color": "#2F3B52",
-   "badge": "Winter",
-   "img": "",
-   "winter": true,
-   "desc": "Thick, warm fleece made for cold Pakistani winters."
-  },
-  {
-   "name": "Quilted Puffer Jacket",
-   "cat": "Jackets",
-   "price": "9800",
-   "sale": "",
-   "color": "#4A2E2E",
-   "badge": "New",
-   "img": "",
-   "winter": true,
-   "desc": "Light but warm quilted jacket with a high collar and zip pockets."
-  },
-  {
-   "name": "Thermal Lined Trousers",
-   "cat": "Winter trousers",
-   "price": "5400",
-   "sale": "4500",
-   "color": "#3F4A3D",
+   "color": "#1F2E55",
    "badge": "",
-   "img": "",
-   "winter": true,
-   "desc": "Brushed thermal lining keeps you warm without the bulk."
+   "desc": "Rich navy khaddar with a refined finish. Smart enough for the office, soft enough for home. Choose your shirt with pant or trouser.",
+   "imgs": []
   },
   {
-   "name": "Wool Blend Muffler",
-   "cat": "Accessories",
-   "price": "2400",
+   "name": "Garnet Night - Maroon Khaddar Co-ord Set",
+   "cat": "Khaddar Co-ord Sets",
+   "cap": "Deep garnet red, arriving very soon",
+   "price": "8900",
    "sale": "",
-   "color": "#8A5A3B",
+   "color": "#6E1F2D",
    "badge": "",
-   "img": "",
-   "winter": true,
-   "desc": "Soft wool blend muffler, long enough to wrap twice."
+   "status": "soon",
+   "desc": "A deep maroon khaddar co-ord set for winter evenings. Coming soon to Hush Hub.",
+   "imgs": []
   }
  ],
  "sections": [
   {
    "title": "Made for everyday",
-   "body": "Hush Hub is a new Pakistani brand making comfortable hoodies, trousers and accessories for men and women. Soft fabrics, easy fits and honest prices.",
+   "body": "Hush Hub is a new Pakistani brand making soft khaddar co-ord sets for women. Comfortable fits, careful stitching and honest prices.",
    "btn": "Our story",
    "tone": "deep"
   }
@@ -127,9 +114,9 @@
  "winter": {
   "on": true,
   "title": "Winter Collection",
-  "sub": "Stay warm in soft fleece, heavy knits and layers made for Pakistan’s cold months."
+  "sub": "Stay warm in soft khaddar made for Pakistan’s cold months."
  },
- "wa": "03284478979",
+ "wa": "923284478979",
  "ship": {
   "fee": "250",
   "free": "8000"
